@@ -17,6 +17,7 @@ class MovieTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        updateViews()
     }
     var movie: Movie? {
         didSet {
@@ -28,7 +29,7 @@ class MovieTableViewCell: UITableViewCell {
         ratingLabel.text = movies.rating
         titleLabel.text = movies.title
         overviewLabel.text = movies.overview
-      //  movieImageView.image = movies.imageURL
+     //   movieImageView.image = movies.imageURL
         }
     }
 
